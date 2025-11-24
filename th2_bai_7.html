@@ -5,6 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-
+    <script>
+        function dao_so(x, y){
+            return [y, x];
+        }
+        let a = prompt('nhập a');
+        let b = prompt('nhập b');
+        let z = a;
+        a = b;
+        b = z;
+        dao_so(a, b);
+        alert(a + ', ' + b + '');
+    </script>
 </body>
 </html>

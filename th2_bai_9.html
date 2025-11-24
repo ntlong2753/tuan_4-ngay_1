@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = [10, 'a', 20, 'b', 30, 'c', 40, 'd', 50, 'e', 60, 'f', 70, 'g', 80, 'h', 90, 'i', 100];
+        let x = prompt('dien ky tu can kiem tra');
+        function kiem_tra(x){
+            let a = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if(String(x) === String(arr[i])) {
+                    a++;
+                }
+            }
+            if (a > 0){
+                alert('ok');
+            }
+            else{
+                alert('sai');
+            }
+        }
+        kiem_tra(x);
+    </script>
+</body>
+</html>
