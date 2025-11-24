@@ -6,7 +6,18 @@
 </head>
 <body>
     <script>
-
+        function kiem_tra(char){
+            let code = char.charCodeAt(0);
+            return code >= 48 && code <= 57;
+        }
+        let x = prompt('nhap ki tu can kiem tra: ');
+        if(kiem_tra(x)){
+            alert(true)
+        }
+        else{
+            alert(false);
+        }
+        //kiem_tra();
     </script>
 </body>
 </html>

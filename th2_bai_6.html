@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
+    <script>
+        let x = parseFloat(prompt('nhap so can kiem tra: '));
+        function kiem_tra(n){
+            //Number.isInteger() là một hàm tích hợp sẵn trong JavaScript dùng để kiểm tra xem
+            // một giá trị có phải là số nguyên hay không.
+            if(Number.isInteger(n) && n > 0){
+                alert(true);
+            }
+            else{
+                alert(false);
+            }
+        }
+        kiem_tra(x);
+    </script>
 </body>
 </html>
