@@ -6,11 +6,18 @@
 </head>
 <body>
     <script>
-        function number(doiso){
-            return ket_qua;
+        const pi = 3.14;
+        let r = prompt('nhập bán kính')
+        function dien_tich(bankinh) {
+            return pi * bankinh * bankinh;
         }
-        let ket_qua = doiso + 1;
-        number(10)
+        function chu_vi(bankinh) {
+            return 2 * pi * bankinh;
+        }
+        let c = chu_vi(r);
+        let s = dien_tich(r);
+        alert('chu vi là: ' + c);
+        alert('diện tích là: ' + s);
     </script>
 </body>
 </html>
