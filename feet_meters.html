@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    <label>Nhập số feet:</label>-->
+<!--    <label for="feetInput"></label><input type="number" id="feetInput">-->
+<!--    <button onclick="function convertToMeter() {-->
+<!--    }-->
+<!--    convertToMeter()">Chuyển sang mét</button>-->
+<!--    <br><br>-->
+<!--    <label>Nhập số mét:</label>-->
+<!--    <label for="meterInput"></label><input type="number" id="meterInput">-->
+<!--    <button onclick="function convertToFoot() {-->
+<!--    }-->
+<!--    convertToFoot()">Chuyển sang feet</button>-->
+    <script>
+        function footToMeter(foot) {
+            return 0.305 * foot;
+        }
+        function meterToFoot(meter) {
+            return 3.279 * meter;
+        }
+        let feet = 10;
+        let meters = footToMeter(feet);
+        console.log(`${feet} feet = ${meters.toFixed(2)} mét`);
+        meters = 5;
+        feet = meterToFoot(meters);
+        console.log(`${meters} mét = ${feet.toFixed(2)} feet`);
+    </script>
+</body>
+</html>
